@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>JOUWVACATURE</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/qmm2kax.css">
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    </head>
+
+    <body>
+        <section class="navbar" id="navbar">
+            <nav class=" bg-white shadow ">
+                <!-- component -->
+        <div class="w-full text-gray-700  dark-mode:text-gray-200 dark-mode:bg-white pb-3 container mx-auto  ">
+        <div x-data="{ open: false }" class="flex flex-col lg:flex-row items-center pt-6  ">
+            <div class="pt-2 flex flex-row items-center justify-between mb-4">
+                <a href="#" class=" focus:outline-none">  
+                    <p class="text-3xl font-bold uppercase">jouwvacature</p>
+                </a>
+            <button class="md:hidden mr-10 rounded-lg focus:outline-none focus:shadow-outline hover:border-yellow-600" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8">
+              <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+            </button    >
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}"  class="  md:mt-1 flex-col flex-grow pb-4 md:pb-0 hidden lg:flex lg:justify-end lg:flex-row nav-absolute">
+           
+        <a class="px-2 pb-4 text-sm text-bold md:mt-0  focus:outline-none flex flex-col text-indigo-800 hover:text-indigo-900 transition duration-300" href="#"><i class="fas fa-home text-center text-3xl "></i>Home</a>
+        <a class="px-2 pb-4 text-sm text-bold md:mt-0  focus:outline-none flex flex-col text-indigo-800 hover:text-indigo-900 transition duration-300" href="#"><i class="fas fa-search text-center text-3xl"></i>Vacatures</a>
+        <a class="px-2 pb-4 text-sm text-bold md:mt-0  focus:outline-none flex flex-col text-indigo-800 hover:text-indigo-900 transition duration-300" href="#"><i class="fas fa-heart text-center text-3xl"></i>Beward</a>
+        <a class="px-2 pb-4 text-sm text-bold md:mt-0  focus:outline-none flex flex-col text-indigo-800 hover:text-indigo-900 transition duration-300" href="#"><i class="fas fa-user text-center text-3xl  "></i>Werkzoekende</a>    
+        <a class="px-2 pb-4 text-sm text-bold md:mt-0  focus:outline-none flex flex-col text-indigo-800 hover:text-indigo-900 transition duration-300"" href="#"><i class="fas fa-user-tie text-center text-3xl"></i>Uitzendbureau</a>
+        <a class="px-2 pb-4 text-sm text-bold md:mt-0  focus:outline-none flex flex-col text-indigo-800 hover:text-indigo-900 transition duration-300"" href="#"><i class="fas fa-info text-center text-3xl"></i>Informatie</a>
+          
+        </nav>
+        </div>
+        </div>
+            </nav>
+        </section>
+
+        <section class="hero-section">
+            <div class="bg-hero-section ">
+                <div class="container mx-auto px-4 lg:px-16">
+                    <div class="grid lg:grid-cols-3 py-56">
+                        <div></div>
+                        <div class="px-8 py-4 text-center  font-medium text-gray-500 bg-indigo-800 shadow-md">
+                            <h2 class="font-bold text-2xl">Vind jouw vacature</h2>
+                            <input type="text" name="functie" id="functie" class="px-4 mt-4 h-8 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 " placeholder="FUNCTIE">
+                            <input type="text" name="plaats" id="plaats" class="px-4 mt-2 h-8 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 " placeholder="PLAATS">
+                            <div class="flex justify-end text-lg pt-2">
+                                <a class="hover:text-gray-600 transition duration-300" href="">VIND VACATURES <i class="fas fa-caret-square-right text-2xl mt-1 ml-2 "></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="paragraph-section">
+            <div class="container mx-auto py-12 px-4 lg:px-40 text-center font-medium text-base">
+                <h2 class="font-bold text-2xl text-indigo-800">Vacatures in de regio Achterhoek vind je op Vacaturebank-Achterhoek!</h2>
+                <p class="py-4">Als je op zoek bent naar een baan of personeel in de regio Achterhoek, dan ben je bij de regionale sociale Vacaturebank Achterhoek aan 
+                    het juiste adres. Bedrijven laten bij ons online zien waar in de regio Achterhoek werk is en hier vinden werkgevers personeel die in de 
+                    Achterhoek wil werken. Wij werken samen met instanties en bedrijven uit de hele regio.</p>
+                <p>Voordelen uit deze samenwerking geven wij door aan onze klanten. Werkzoekenden kunnen behalve vacatures nog veel meer vinden zo 
+                    als ook veel sociale rubrieken en dergelijke. Deze zijn voor een deel gratis omdat wij sociaal verantwoord willen werken.</p>
+            </div>
+        </section>
+
+        <section class="maps-section ">
+            <div class="">
+                <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78596.19593198498!2d6.267350656959235!3d52.004488559847864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7b06f6671a407%3A0x7e6ed1009ffb6ac5!2sZelhem%2C%20Netherlands!5e0!3m2!1sen!2s!4v1619738450914!5m2!1sen!2s" width="1350" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>            
+        </section>
+
+        <section class="cards-section">
+            <div class="container mx-auto px-4 lg:px-40 mt-12">
+                <div class="grid lg:grid-cols-4 border-b ">
+                    <div class="col-span-3">
+                        <h2 class="font-bold text-2xl text-indigo-800">Nieuwste vacatures in regio Achterhoek</h2>
+                    </div>
+                    <div class="mb-4 flex justify-end">
+                       
+                        <button  class="bg-gray-500 shadow  hover:bg-gray-700 transition duration-300 text-white hover:text-blue-200 font-semibold text-base lg:text-lg px-4  h-10" >
+                            Bekijk alle vacatures
+                        </button>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-4 gap-8 mt-4 mb-12 text-sm font-medium">
+                    <!--first column-->
+                    <div>
+                        <h2 class="font-bold text-lg text-indigo-800">Vacature titel</h2>
+                        <h2 class="font-bold text-lg ">Hengelo</h2>
+                        <p class="italic">Salaris</p>
+                        <p class="italic">Fulltime</p>
+                        <p class="">Hier een inleiding xxxxx xxxx 
+                            xxxxxx xxxx Lorem ipsum dolor 
+                            sit amet, consectetuer adipiscing 
+                            elit, sed diam nonummy nibh...</p>
+                    </div>
+                    <!--second column-->
+                    <div>
+                        <h2 class="font-bold text-lg text-indigo-800">Vacature titel</h2>
+                        <h2 class="font-bold text-lg ">Hengelo</h2>
+                        <p class="italic">Salaris</p>
+                        <p class="italic">Fulltime</p>
+                        <p>Hier een inleiding xxxxx xxxx 
+                            xxxxxx xxxx Lorem ipsum dolor 
+                            sit amet, consectetuer adipiscing 
+                            elit, sed diam nonummy nibh...</p>
+                    </div>
+                    <!--third column-->
+                    <div>
+                        <h2 class="font-bold text-lg text-indigo-800">Vacature titel</h2>
+                        <h2 class="font-bold text-lg ">Hengelo</h2>
+                        <p class="italic">Salaris</p>
+                        <p class="italic">Fulltime</p>
+                        <p>Hier een inleiding xxxxx xxxx 
+                            xxxxxx xxxx Lorem ipsum dolor 
+                            sit amet, consectetuer adipiscing 
+                            elit, sed diam nonummy nibh...</p>
+                    </div>
+                    <!--forth column-->
+                    <div>
+                        <h2 class="font-bold text-lg text-indigo-800">Vacature titel</h2>
+                        <h2 class="font-bold text-lg ">Hengelo</h2>
+                        <p class="italic">Salaris</p>
+                        <p class="italic">Fulltime</p>
+                        <p>Hier een inleiding xxxxx xxxx 
+                            xxxxxx xxxx Lorem ipsum dolor 
+                            sit amet, consectetuer adipiscing 
+                            elit, sed diam nonummy nibh...</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="post-section">
+            <div class="px-4 lg:px-40 bg-indigo-800">
+                <!-- first column -->
+                <div class="grid lg:grid-cols-2 gap-4">
+                    <div class=" text-White text-center pt-24 lg:pl-">
+                        <h2 class="font-bold text-2xl text-gray-500 mb-4">Vacature plaatsen</h2>
+                        <p class="mb-4">De meeste bedrijven zijn op zoek naar een werknemer die niet 
+                            verder weg woont dan 30-40 km. Daarom plaats je een regionale 
+                            vacature online op een regionale vacaturebank. Bedrijven klikken 
+                            hier voor onze aanbiedingen en mogelijkheden</p>
+                        <p>Met onze lage prijzen en goede service en door samen te werken 
+                            met de regionale kranten, radio, specialist voor video en social 
+                            media e.d. hebben wij verschillende aanbiedingen om uw vacature maximaal onder de aandacht te brengen.</p>
+                    </div>
+                    <!-- second column -->
+                    <div class=" text-center my-8 mr-8 lg ml-8 ">
+                        <div class="bg-white py-8 px-4 lg:px-20 font-medium ">
+                            <h2 class="font-bold text-2xl text-gray-500 mb-4">Waarom Vacaturebank Achterhoek</h2>
+                            <ul>
+                                <li>• Bedrijven kunnen vacatures zelf aanmelden, afmelden, verlengen.</li>
+                                <li>• Alle websites zijn 100 % interactief</li>
+                                <li>• Bedrijfsprofielen plaatsen met logo.</li>
+                                <li>• Op zoek gaan naar geschikte kandidaten in de database.</li>
+                                <li>• De kijkcijfers staan per vacature vermeld net als de online sollicitaties.</li>
+                            </ul>
+                            <button  class="bg-gray-500  hover:bg-gray-700 transition duration-300 text-white hover:text-blue-200 font-semibold text-lg px-4 mt-8  h-10" >
+                                Plaats vacature 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="regions-section bg-gray-300">
+            <div class="container mx-auto px-4 lg:px-40 py-8">
+                <div class="grid lg:grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="font-bold text-base text-indigo-800  pt-2">Vacaturebank Regionaal vind je ook in de volgende regio’s:</h3>
+                    </div>
+                    <div class="ml-8">
+                        <select class="h-10 w-full shadow" name="" id="find-us">
+                            <option value=""></option>
+                            
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container mx-auto px-4 lg:px-40 py-8">
+                <div>
+                    <h2 class="font-bold text-2xl text-indigo-800 text-center mb-4">Bedrijfpresentaties voor bedrijven in de Achterhoek</h2>
+                </div>
+                <div class="flex justify-between py-2 border-b border-t">
+                    <i class="fas fa-caret-left text-indigo-800 mt-10"></i>
+                    <img src="./assets/Schermafbeelding 2021-03-31 om 14.51.52.png" alt="">
+                    <i class="fas fa-caret-right text-indigo-800 mt-10"></i>
+                </div>
+                <div class="text-sm text-gray-500 text-center my-12">
+                    <p>Deze site is met de grootst mogelijke zorgvuldigheid samengesteld.</p>
+                    <p>Als u desondanks een fout constateert stellen wij een berichtje daarover op prijs: info@vacaturebank-achterhoek.nl</p>
+                    <p>Copyright &copy; 2021 - Vacaturebank-Achterhoek.nl is een onderdeel van Vacaturebank-Regionaal.nl - Privacy statement - Disclaimer - Sitemap</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.8.0/dist/alpine.js" defer></script>
+
+    </body>
+
+</html>

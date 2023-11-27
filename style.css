@@ -1,0 +1,12 @@
+.bg-hero-section{
+    
+    background-image:linear-gradient(rgba(75, 0, 130, 0.2), rgba(75, 0, 130, 0.2)),url('./assets/alesia-kazantceva-VWcPlbHglYc-unsplash.jpg');
+    background-size: cover;
+    
+    width: 100%;
+}
+.logos{
+    width: 100px;
+    height: auto;
+    margin
+}
